@@ -1,0 +1,5 @@
+package com.sssta.model;
+
+public class Person {
+
+}

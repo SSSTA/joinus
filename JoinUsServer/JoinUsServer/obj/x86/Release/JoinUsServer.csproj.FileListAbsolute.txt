@@ -1,0 +1,4 @@
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\bin\Release\JoinUsServer.exe
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\bin\Release\JoinUsServer.pdb
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\obj\x86\Release\JoinUsServer.exe
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\obj\x86\Release\JoinUsServer.pdb

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/showall" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/showall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_search"
+        
+        android:text="显示全部" />
+
+	<EditText
+        android:id="@+id/text_search"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/searchbar"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/showall"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searchbar"
+        android:src="@drawable/default1" />
+
+    <ImageView
+        android:id="@+id/searchbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/searchbar" />
+
+</RelativeLayout>

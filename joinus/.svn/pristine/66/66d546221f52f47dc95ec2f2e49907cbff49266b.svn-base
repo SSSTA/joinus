@@ -1,0 +1,23 @@
+package com.sssta.joinus;
+
+import java.io.UnsupportedEncodingException;
+
+//import model.*;
+
+public class Program {
+	public static void main(String []args)
+	{
+		SocketClient socketClient=new SocketClient();
+		String nameString="这是活动名称";
+		//Activities activities;
+	/*	try {
+			activities = Activities.FindActivitiesByName(new String(nameString.getBytes(), "UTF-8")).get(0);
+			System.out.print(activities.content);
+			System.out.print(activities.time);
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+
+	}
+}

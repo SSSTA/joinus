@@ -1,0 +1,11 @@
+package com.sssta.model;
+
+public class ConstValue {
+	public static String DivFieldString="\0";
+	public static String DivRowString="\0\0";
+	public static String EndString="?end?";
+	static String MakeString(String s)
+	{
+		return "'"+s+"'";
+	}
+}

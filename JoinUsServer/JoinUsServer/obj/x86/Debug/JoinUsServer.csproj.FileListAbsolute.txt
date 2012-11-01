@@ -1,0 +1,10 @@
+D:\我的文档\Visual Studio 2010\Projects\JoinUsServer\JoinUsServer\bin\Debug\JoinUsServer.exe
+D:\我的文档\Visual Studio 2010\Projects\JoinUsServer\JoinUsServer\bin\Debug\JoinUsServer.pdb
+D:\我的文档\Visual Studio 2010\Projects\JoinUsServer\JoinUsServer\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\我的文档\Visual Studio 2010\Projects\JoinUsServer\JoinUsServer\obj\x86\Debug\JoinUsServer.exe
+D:\我的文档\Visual Studio 2010\Projects\JoinUsServer\JoinUsServer\obj\x86\Debug\JoinUsServer.pdb
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\obj\x86\Debug\JoinUsServer.exe
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\obj\x86\Debug\JoinUsServer.pdb
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\bin\Debug\JoinUsServer.exe
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\bin\Debug\JoinUsServer.pdb
+D:\QQFile\394494013\FileRecv\JoinUsServer\JoinUsServer\obj\x86\Debug\JoinUsServer.csprojResolveAssemblyReference.cache

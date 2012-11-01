@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/shetuanmingcheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="社团名称"
+        android:textSize="25dip" />
+
+    <TextView
+        android:id="@+id/name_shetuan"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="25dip" />
+
+    <TextView
+        android:id="@+id/huodongmingcheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动名称"
+        android:textSize="25dip" />
+
+    <EditText
+        android:id="@+id/name_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus android:layout_width="wrap_content" />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/huodongshijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动时间"
+        android:textSize="25dip" />
+
+    <Button
+        android:id="@+id/time_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择时间"
+        android:textSize="25dip" />
+
+    <Button
+        android:id="@+id/date_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择日期"
+        android:textSize="25dip" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动地点"
+        android:textSize="25dip" />
+
+    <EditText
+        android:id="@+id/place_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/lianxifangshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系方式"
+        android:textSize="25dip" />
+
+    <EditText
+        android:id="@+id/contact_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动分类"
+        android:textSize="25dip" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="25dip" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动详情"
+        android:textSize="25dip" />
+
+    <EditText
+        android:id="@+id/detail_EditTexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交" />
+
+</LinearLayout>
+</ScrollView>

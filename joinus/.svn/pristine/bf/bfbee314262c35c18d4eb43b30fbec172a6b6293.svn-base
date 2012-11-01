@@ -1,0 +1,76 @@
+package com.sssta.joinus;
+
+
+import android.R;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	private TextView textView;
+	private Button activity_recent;
+	private Button activity_search;
+	private Button myActivity;
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(0x7f030000);
+        textView=(TextView)findViewById(R.id.text1);
+        activity_search=(Button)findViewById(0x7f080001);
+        activity_recent=(Button)findViewById(0x7f080000);
+        myActivity=(Button)findViewById(0x7f080004);
+        myActivity.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent();
+				/* 指定intent要启动的类 */
+				intent.setClass(MainActivity.this, myActivity.class);
+				/* 启动一个新的Activity */
+				startActivity(intent);
+			}
+		});
+        activity_recent.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent();
+				/* 指定intent要启动的类 */
+				intent.setClass(MainActivity.this, activity_recent.class);
+				/* 启动一个新的Activity */
+				startActivity(intent);
+				
+			}
+		});
+        activity_recent.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent();
+				/* 指定intent要启动的类 */
+				intent.setClass(MainActivity.this, activity_search.class);
+				/* 启动一个新的Activity */
+				startActivity(intent);
+				
+				
+			}
+		});
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(0x7f070000, menu);
+        return true;
+    }
+
+    
+}

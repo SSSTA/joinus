@@ -1,0 +1,82 @@
+package com.sssta.joinus;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+import com.sssta.model.ConstValue;
+//import model.ConstValue;
+//import org.omg.CORBA.StringHolder;
+
+
+public class SocketClient {
+	
+	static private String host="115.155.41.172";
+	static private int port=3001;
+	static private Socket socket;
+	static private InputStream inputStream=null;
+	static private OutputStream outputStream=null;
+	static private byte[] outbuffer;
+	static private byte[] inbuffer=new byte[1024];
+	static private String inbufferString="";
+	
+	static public String Execute(String cmd)
+	{
+		/*try 
+		{ 
+		in = new BufferedReader(new InputStreamReader(socket.getInputStream())); 
+		out = new PrintWriter(socket.getOutputStream(),true); 
+		out.println(cmd);
+		String s;
+		s=in.readLine();
+		System.out.print(s);
+		out.close(); 
+		in.close(); 
+		socket.close(); 
+		} 
+		catch (IOException e) 
+		{} */
+		if(socket==null)
+		{
+			try {
+				socket=new Socket(host, port);
+			} catch (UnknownHostException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+		try{
+			cmd+=";";
+			inputStream=socket.getInputStream();
+			outputStream=socket.getOutputStream();
+			outbuffer=cmd.getBytes();
+			outputStream.write(outbuffer);
+			while(true)
+			{
+				inputStream.read(inbuffer);
+				String tempString=new String(inbuffer,"utf-8");
+				inbufferString+=tempString;
+				if(tempString.contains(ConstValue.EndString))
+				{
+					int index=inbufferString.lastIndexOf(ConstValue.EndString);
+					inbufferString.substring(0, index);
+					break;
+				}
+			}
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+		finally
+		{
+			return inbufferString;
+		}
+	}
+		
+		
+}

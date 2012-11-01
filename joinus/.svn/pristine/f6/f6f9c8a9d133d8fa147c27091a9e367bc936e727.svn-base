@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">joinus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="activity_recent">activity_recent</string>
+    <string name="activity_search">activity_search</string>
+    <string name="activity_detail">activity_detail</string>
+    <string name="activity_publish">activity_publish</string>
+      <string name="myActivity">myActivity</string>
+
+</resources>

@@ -1,0 +1,27 @@
+package com.sssta.joinus;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+
+public class welcome extends Activity {
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.welcome);
+		final Intent intent2 = new Intent(welcome.this,
+				MainActivity.class);
+		Timer timer = new Timer();
+		TimerTask task = new TimerTask() {
+			@Override
+			public void run() {
+				startActivity(intent2);
+				finish(); // ÷¥––
+			}
+		};
+		timer.schedule(task, 1000 * 1); // 1√Î∫Û*/
+
+	}
+}
